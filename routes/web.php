@@ -5,6 +5,7 @@ use App\Http\Controllers\admin\AdminPagesController;
 use App\Http\Controllers\admin\auth\LoginController;
 use App\Http\Controllers\admin\auth\RegisterController;
 use App\Http\Controllers\admin\AdminPostsController;
+use App\Http\Controllers\MemberRegisterController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\PostsController;
@@ -45,6 +46,7 @@ Route::get('more-topics', [PagesController::class, 'moreTopics'])->name('moreTop
 
 Route::get('see-post', [PostsController::class, 'index'])->name('showPost');
 
+Route::post('member-register', [MemberRegisterController::class, 'store'])->name('member.store');
 
 Route::middleware(['guest'])->group(function () {
     Route::get('admin/login', [LoginController::class, 'index'])->name('admin.login');
