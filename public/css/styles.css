@@ -390,6 +390,10 @@ a {
     font-size: 4em;
 }
 
+.articles img {
+    height: 200px;
+}
+
 @media screen and (max-width: 1300px) {
     .mainNav ul li a {
         font-size: 17px;

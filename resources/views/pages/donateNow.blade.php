@@ -1,14 +1,13 @@
 @extends('layouts.master')
 @section('body-content')
 
-@foreach ($donate_now_page as $donate_now)
+{{-- @foreach ($donate_now_page as $donate_now)
     {!! html_entity_decode($donate_now->content_one) !!}
     {!! html_entity_decode($donate_now->content_two) !!}
     {!! html_entity_decode($donate_now->content_three) !!}
-@endforeach
+@endforeach --}}
 
-{{-- <section class="donate-now-content-one">
-<section class="text-white d-flex flex-column justify-content-center align-items-center" style="background-image: url(./images/donate.avif); height: 50rem; background-size: cover; background-repeat: no-repeat;">
+{{-- <section class="text-white d-flex flex-column justify-content-center align-items-center" style="background-image: url(./images/donate.avif); height: 50rem; background-size: cover; background-repeat: no-repeat;">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -16,231 +15,96 @@
       </div>
     </div>
   </div>
-</section>
-
-<section class="container mt-5 mb-5">
-  <div class="row">
-    <div class="col-lg-8 col-md-12 col-12 fs-5">
-      <p>The United Nations Environment Programme (UNEP) is the leading global authority on the environment.</p>
-      <p>UNEP’s mission is to inspire, inform, and enable nations and peoples to improve their quality of life without
-        compromising that of future generations.</p>
-      <p>For over 50 years, UNEP has worked with governments, civil society, the private sector and UN entities to
-        address humanity’s most pressing environmental challenges - from restoring the ozone layer to protecting the
-        world's seas and promoting a green, inclusive economy.</p>
-      <p>UNEP is driving transformational change by drilling down on the root causes of the triple planetary crisis of
-        climate change, nature and biodiversity loss and pollution.</p>
-      <p>UNEP’s work is focused on helping countries transition to low-carbon and resource-efficient economies,
-        strengthening environmental governance and law, safeguarding ecosystems, and providing evidence-based
-        data to inform policy decisions.</p>
-      <p>Through cutting-edge science, coordination and advocacy, UNEP supports its 193 Member States to achieve
-        the Sustainable Development Goals and live in harmony with nature.</p>
-      <p>And this work has never been more critical.</p>
-      <p>For a look back at UNEP’s history and five decades of environmental milestones, watch the video and see
-        the UNEP timeline of milestones over the past 50 years.</p>
-    </div>
-    <div class="col-lg-4 col-md-12 col-12 fs-5">
-      <ul class="list-group list-group-flush text-secondary">
-        <li class="list-group-item text-primary"><a href="#">About Us</a></li>
-        <li class="list-group-item text-primary"><a class="text-reset" href="#">Frequently Asked Questions</a></li>
-        <li class="list-group-item text-primary"><a class="text-reset" href="#">Structure and Leadership</a></li>
-        <li class="list-group-item text-primary"><a class="text-reset" href="#">Funding and Partnerships</a></li>
-        <li class="list-group-item text-primary"><a class="text-reset" href="#">Policies and Strategies</a></li>
-        <li class="list-group-item text-primary"><a class="text-reset" href="#">Civil Society Engagement</a></li>
-        <li class="list-group-item text-primary"><a class="text-reset" href="#">Private Sector Engagement</a></li>
-        <li class="list-group-item text-primary"><a class="text-reset" href="#">Evaluation Office</a></li>
-        <li class="list-group-item text-primary"><a class="text-reset" href="#">Contact Us</a></li>
-      </ul>
-
-    </div>
-  </div>
-</section>
-</section>
-
-<section class="donate-now-content-two">
-<section class="backgrund py-5" style="background-color: #efefef;">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-3 col-md-6 col--12">
-        <div class="Governance">
-          <h1>Governance</h1>
-          <p class="fs-5">UNEP works closely with its 193
-            Member States and representatives
-            from civil society, businesses,
-            and other major groups and stakeholders to
-            address environmental challenges
-            through the UN Environment Assembly,
-            the world’s highest-level decision-
-            making body on the environment.</p>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col--12 mb-5">
-        <div class="card h-100">
-          <img src="images/image/1.jpeg" class="card-img-top ">
-          <div class="card-body">
-            <h5 class="card-text"><a class="text-reset" href="#">Committee of Permanent Representatives</a></h5>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col--12 mb-5">
-        <div class="card h-100">
-          <img src="images/image/2.jpeg" class="card-img-top" >
-          <div class="card-body">
-            <h5 class="card-text"><a class="text-reset" href="#">The United Nations Environment Assembly</a></h5>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col--12 mb-5">
-        <div class="card h-100">
-          <img src="images/image/3.jpeg" class="card-img-top" >
-          <div class="card-body bg-0">
-            <h5 class="card-text"><a class="text-reset" href="#"> Secretariats and Conventions </a></h5>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="container mt-5 mb-5">
-  <div class="row">
-    <div class="col-lg-6 col-md-6 col-12">
-      <div class="heading">
-        <h1 class="mb-4"><strong> UNEP’s contribution to the Sustainable Development Goals (SDGs)</strong></h1>
-        <p class="mb-4 fs-5">UNEP’s core mission is to find solutions to the triple planetary crisis.
-          As the leading global authority on the environment, the institution
-          helps its Member States to foster climate stability, live in harmony
-          with nature and forge a pollution-free future, supporting
-          the achievement of all 17 SDGs.</p>
-          <p class="fs-4 ">UNEP has spent more than 50 years supporting sustainable
-            development through its work on the environment.</p>
-      </div>
-    </div>
-    <div class="col-lg-6 col-md-6 col-12">
-      <div class="logo">
-        <a href="#"><img class="mb-1 img-fluid" src="images/image/E-WEB-Goal-01.png"></a>
-        <a href="#"><img class="mb-1 img-fluid" src="images/image/E-WEB-Goal-02.png"></a>
-        <a href="#"><img class="mb-1 img-fluid" src="images/image/E-WEB-Goal-03.png"></a>
-        <a href="#"><img class="mb-1 img-fluid" src="images/image/E-WEB-Goal-04.png"></a>
-        <a href="#"><img class="mb-1 img-fluid" src="images/image/E-WEB-Goal-05.png"></a>
-        <a href="#"><img class="mb-1 img-fluid" src="images/image/E-WEB-Goal-06.png"></a>
-        <a href="#"><img class="mb-1 img-fluid" src="images/image/E-WEB-Goal-07.png"></a>
-        <a href="#"><img class="mb-1 img-fluid" src="images/image/E-WEB-Goal-08.png"></a>
-        <a href="#"><img class="mb-1 img-fluid" src="images/image/E-WEB-Goal-09.png"></a>
-        <a href="#"><img class="mb-1 img-fluid" src="images/image/E-WEB-Goal-10.png"></a>
-        <a href="#"><img class="mb-1 img-fluid" src="images/image/E-WEB-Goal-01.png"></a>
-        <a href="#"><img class="mb-1 img-fluid" src="images/image/E-WEB-Goal-11.png"></a>
-        <a href="#"><img class="mb-1 img-fluid" src="images/image/E-WEB-Goal-12.png"></a>
-        <a href="#"><img class="mb-1 img-fluid" src="images/image/E-WEB-Goal-13.png"></a>
-        <a href="#"><img class="mb-1 img-fluid" src="images/image/E-WEB-Goal-14.png"></a>
-        <a href="#"><img class="mb-1 img-fluid" src="images/image/E-WEB-Goal-15.png"></a>
-        <a href="#"><img class="mb-1 img-fluid" src="images/image/E-WEB-Goal-16.png"></a>
-        <a href="#"><img class="mb-1 img-fluid" src="images/image/E-WEB-Goal-17.png"></a>
-
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="container-fluid mb-5" style="background-color: #efefef;">
-  <div class="row align-items-center">
-    <dov class="col-lg-6 col-md-12 col-12 px-lg-5">
-      <div class="unep mx-lg-5 px-lg-5 p-md-5 py-5">
-        <h1 class="mx-lg-5 px-lg-5 mb-4">UNEP – your partner for people and planet</h1>
-          <p class="mx-lg-5 px-lg-5 fs-5">This booklet presents an overview of UNEP – its mission, vision,
-            strategy and action for tackling the triple planetary crisis. It chronicles
-            environmental highlights from the past five decades, shows how UNEP
-            works in partnerships, and explains why it is crucial that funding
-            provided to UNEP keeps pace with the growing expectations placed on
-            the organization to deliver results in support of people and planet.</p>
-      </div>
-    </dov>
-    <dov class="col-lg-6 col-md-12 col-12">
-      <img class="w-100" src="images/image/unep.png">
-    </dov>
-  </div>
-</section>
-</section>
-
-
-<section class="donate-now-content-three">
-<section class="container">
-  <div class="row mb-4">
-    <div class="col-12">
-      <div class="featured">
-        <h1>Featured news and stories</h1>
-      </div>
-    </div>
-  </div>
-  <div class="row bg-primary text-light">
-    <div class="col-lg-7 col-md-7 col-12 p-0">
-      <img src="images/image/featured.jpeg">
-    </div>
-    <div class="col-lg-5 col-md-5 col-12 ">
-      <div class="featured py-4">
-        <p>Video</p>
-        <h5>Look back at UNEP’s history and how it has helped shape five decades of environmental milestones</h5>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="container mt-4 mb-5">
-  <div class="row">
-    <div class="col-lg-4 col-md-4 col-12 mb-5">
-      <div class="card">
-        <img src="images/image/SDg_banner_image.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p>STORY</p>
-          <h5 class="card-text">Everything you need to know about plastic pollution</h5>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-4 col-md-4 col-12 mb-5">
-      <div class="card">
-        <img src="images/image/GettyImages-466756626.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p>STORY</p>
-          <h5 class="card-text">Unsung heroes of conservation: Indigenous people fight for forests</h5>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-4 col-md-4 col-12 mb-5">
-      <div class="card">
-        <img src="images/image/GettyImages-673234176.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p>STORY</p>
-          <h5 class="card-text">UN resolution billed as a turning point in climate justice</h5>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="container mt-5">
-  <div class="row">
-    <div class="col-lg-4 col-md-4 col-12 mb-5 text-center p-4 border-end">
-      <div class="svg mb-5 position-relative">
-        <img src="images/image/icon_learn.svg">
-      </div>
-        <h5><a href="#">Learn about our work </a></h5>
-    </div>
-    <div class="col-lg-4 col-md-4 col-12 mb-5 text-center p-4 border-end">
-      <div class="svg mb-5">
-        <img src="images/image/icon_signup.svg">
-      </div>
-      <h5 class="card-text"><a href="#">Sign up for updates </a></h5>
-    </div>
-    <div class="col-lg-4 col-md-4 col-12 mb-5 text-center p-4 border-end">
-      <div class="svg mb-5">
-        <img src="images/image/icon_getinvolved.svg">
-      </div>
-      <h5 class="card-text"><a href="#">Get involved </a></h5>
-    </div>
-  </div>
-</section>
 </section> --}}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-9 p-5">
+            <h4 class=""><b>We are proudly a non-profit organization</b></h4>
+            <p class="fs-5">As a nonprofit, we rely on donations to provide the kind of rights everyone deserves. We are trying to give the high quality professional service that everyone needs.</p>
+            <p class="fw-bold fs-6">❤️ 100% of your donations will be spent on the improvement of the humanity.</p>
+
+            <p class="pt-4 fw-bold">List of our donors: </p>
+            <div class="mb-5" style="max-height:300px;overflow-y:scroll;">
+                <table class="table bg-secondary border border-4 border-gray-800" >
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody style="height: 100px !important;overflow-y:auto !important;">
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark Otto</td>
+                            <td>$25</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob Silver</td>
+                            <td>$300</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry the Bird</td>
+                            <td>$1000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Alex Groot</td>
+                            <td>$40</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Pinky Promi</td>
+                            <td>$10</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Heild Bomb</td>
+                            <td>$70</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Growth Young</td>
+                            <td>$80</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>Mr. Pennt</td>
+                            <td>$200</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">9</th>
+                            <td>Keith Broom</td>
+                            <td>$550</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h5 class="fw-bold">Donate now:</h5>
+            <form action="" method="post">
+                @csrf
+                <div class="input-group mb-3 w-50">
+                    <button class="btn border p-4">$</button>
+                    <input type="text" class="form-control p-3" name="donate" placeholder="Enter the amount" required>
+                    <button class="btn btn-primary p-4 ms-2">Donate</button>
+                </div>
+            </form>
+
+
+        </div>
+
+
+
+        <div class="col-3 p-0">
+            <img src="/images/child.png" class="w-100">
+        </div>
+    </div>
+    </div>
+</div>
+
 
 
 @endsection

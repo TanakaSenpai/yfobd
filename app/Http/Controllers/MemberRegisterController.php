@@ -16,10 +16,10 @@ class MemberRegisterController extends Controller
             'phone_number' => 'required|min:11|starts_with:01'
         ]);
 
-        if (Validator::fails()) {
+        // if (Validator::fails()) {
 
-          return response()->json(['errors'=>$validator->errors()]);
-        }
+        //   return response()->json(['errors'=>$validator->errors()]);
+        // }
 
         MemberRegister::create([
             'name' => $request->username,

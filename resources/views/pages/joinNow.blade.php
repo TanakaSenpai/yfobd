@@ -1,13 +1,13 @@
 @extends('layouts.master')
 @section('body-content')
 
-{{-- @foreach ($join_now_page as $join_now)
+@foreach ($join_now_page as $join_now)
     {!! html_entity_decode($join_now->content_one) !!}
     {!! html_entity_decode($join_now->content_two) !!}
     {!! html_entity_decode($join_now->content_three) !!}
-@endforeach --}}
+@endforeach
 
-<div class="join-now-section-one">
+{{-- <div class="join-now-section-one">
 <div class="d-flex justify-content-center my-3">
 <div class="hold-transition register-page w-50 my-3">
     <h1 class="text-center fw-bolder pb-2">YFOBD</h1>
@@ -115,6 +115,6 @@
 </div>
 </div>
 </div>
-</div>
+</div> --}}
 @endsection
 
